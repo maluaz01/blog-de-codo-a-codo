@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog Grupo 6</title>
+        <link rel="stylesheet" href="../../static/css/blog.css">
+    </head>
+    <body>
+
+      <div>
+        <h1><a href="/">Proyecto 'Blog de grupo 6'</a></h1>
+      </div>
+
+    {% for post in posts %}
+      <div>
+        <p> publicado: {{ post.fecha_de_publicacion }}</p>
+        <h2><a href="">{{ post.titulo }}</a></h2>
+        <p>{{ post.texto|linebreaksbr }}</p>
+      </div>
+    {% endfor %}
+    </body>
+</html>
