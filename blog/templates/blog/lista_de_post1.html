@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog Grupo 6</title>
+        <link rel="stylesheet" href="../../static/css/blog.css">
+        <meta name="viewport" content="width=device-width; initial-scale=2">
+    </head>
+    <body>
+      <header>
+        <h1><a href="/">Proyecto 'Blog de grupo 6'</a></h1>
+      </header>
+    <div class="bordecito">
+    <p class="posteos">Posts:</p>
+
+    {% for post in posts %}
+      <div class="globo">
+        <p class="publicado"> Publicado: {{ post.fecha_de_publicacion }}</p>
+        <p class="autor"> Autor: {{ post.autor }}</p>
+        <h2><a href="">{{ post.titulo }}</a></h2>
+        <p class="coment">{{ post.texto|linebreaksbr }}</p>
+      </div>
+    {% endfor %}
+    </div>
+    <footer>
+      <p class="futer">Curso Django de Codo a Codo, año 2022</p>
+    </footer>
+    </body>
+</html>

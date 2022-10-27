@@ -5,3 +5,6 @@ from django.utils import timezone
 def lista_de_post(request):
     posts =Post.objects.filter(fecha_de_publicacion__lte=timezone.now()).order_by('fecha_de_publicacion')
     return render(request, 'blog/lista_de_post.html', {'posts': posts})
+
+def juego(request):
+    return render(request, 'blog/juego.html', {})
