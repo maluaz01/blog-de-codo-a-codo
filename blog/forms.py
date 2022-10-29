@@ -7,8 +7,7 @@ class ContenidoForm(forms.Form):
     TIPO_CONTENIDO = (
         ('','-Seleccione-'),
         (1,'Chiste'),
-        (2,'Cuento'),
-        (3,'Poesia'),
+        (2,'Poesia'),
     )
 
     categoria = forms.ChoiceField(
