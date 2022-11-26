@@ -1,0 +1,192 @@
+
+:root{
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5; }
+
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  text-align: var(--bs-body-text-align);
+}
+
+nav.navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav-link{
+    display: inline-block;
+    margin-block: 2px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    
+}
+  
+.nav-link:hover {
+    color: rgb(210, 254, 162);
+}
+  
+.nav-link.active{
+    color: rgb(210, 254, 162) !important;
+}
+
+header.masthead {
+    position: relative;
+    overflow: hidden;
+    padding-top: calc(9rem + 72px);
+    padding-bottom: 11.5rem;
+    background: linear-gradient( 128.1deg,  rgba(36,242,170,1) 12.4%, rgba(18,245,71,0.63) 62.4% );
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+h1{
+    font-size: calc(4rem + 1.5vw);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Catamaran", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 800;
+    line-height: 1.2;
+    color: #212529;
+}
+
+h2{
+    font-size: calc(2rem + 1.5vw);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Catamaran", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 600;
+    line-height: 1.2;
+    color: #212529;
+}
+header.masthead .masthead-content {
+    z-index: 1;
+    position: relative;
+}
+
+header.masthead .bg-circle {
+    z-index: 0;
+    position: absolute;
+    border-radius: 100%;
+    /* background: linear-gradient(0deg,rgba(36,242,170,1) 12.4%, rgba(18,245,71,0.63) 62.4% ); */
+    
+    background: radial-gradient(at top left,rgba(36,242,170,1)20%, rgba(18,245,71,0.63) );
+
+}
+header.masthead .bg-circle-1 {
+    height: 90rem;
+    width: 90rem;
+    bottom: -55rem;
+    left: -55rem;
+    
+}
+header.masthead .bg-circle-2 {
+    height: 50rem;
+    width: 50rem;
+    top: -25rem;
+    right: -25rem;
+}
+header.masthead .bg-circle-3 {
+    height: 20rem;
+    width: 20rem;
+    bottom: -10rem;
+    right: 5%;
+}
+header.masthead .bg-circle-4 {
+    height: 30rem;
+    width: 30rem;
+    top: -5rem;
+    right: 35%;
+}
+
+.rounded-pill {
+    border-radius: 50rem !important;
+}
+.btn-xl{
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    background-color: rgba(36,242,170,1);
+    border: none;
+}
+.btn-xl:hover{
+    color: rgba(36,242,170,1);
+    background-color:#fff;
+}
+
+
+/* Cargar.html */
+
+.formulario-carga{
+    justify-content: center !important;
+}
+
+
+/* ver_contenido.html */
+
+.selec-categoria{
+    margin-top: 6rem !important;
+}
+
+.cards-container{
+    margin: calc(1rem + 72px);;
+}
+
+.titulo-card, .autor-card{
+    text-align: center;
+}
+
+.boton-cards, .boton-cargar{
+    text-transform: uppercase;
+    padding: 0.5rem 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    background-color: rgba(36,242,170,1);
+    border-radius: 50rem ;
+    border: 1px solid rgba(36,242,170,1) !important;
+}
+
+.boton-card-grande{
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    background-color: rgba(36,242,170,1);
+    border-radius: 50rem ;
+    border: 1px solid rgba(36,242,170,1) !important;
+}
+.boton-card-grande:hover, .boton-cards:hover, .boton-cargar:hover{
+    color: rgba(36,242,170,1);
+    background-color:#fff;
+    border: 1px solid rgba(36,242,170,1) !important;
+
+}
+
+
+/* footer */
+
+/* footer{
+    background: linear-gradient( 128.1deg,  rgba(36,242,170,1) 12.4%, rgba(18,245,71,0.63) 110% ); 
+    background-color:  #24F38B
+} */
