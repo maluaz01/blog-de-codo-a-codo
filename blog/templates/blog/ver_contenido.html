@@ -1,0 +1,60 @@
+{% extends './base1.html' %}
+
+{% block titulo %}Inicio{% endblock %}
+
+{% block contenido %}
+<div class="container px-4 px-lg-5">
+
+
+    <div class="card text-white  my-5 py-2 text-center selec-categoria">
+        <div class="card-body"><p class="text-black m-0">Aca voy a poner la seleccion de categoria</p></div>
+    </div>
+    <!-- Heading Row-->
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="/static/assets/imagenes/pexels-pixabay-159866.jpg" alt="..." /></div>
+        <div class="col-lg-5">
+            <h1 class="font-weight-light">Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe voluptatem, harum iure facere quos.</p>
+            <a class="btn btn-primary boton-card-grande" href="#!">Lorem</a>
+        </div>
+    </div>
+    <!-- Call to Action-->
+   
+    <!-- Content Row-->
+    {% if contenidos|length > 0 %}
+    <div class="cards-container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 align-items-center justify-content-center">
+        {% for post in contenidos %}
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img card-img-top" width="100%" src="/static/assets/imagenes/pexels-thought-catalog-904616.jpg" alt=""
+                    width="20%">
+                    <div class="card-body">
+                        <h2 class="titulo-card">{{post.titulo}}</h2>
+                        <h3 class="autor-card">{{post.autor}}</h3>
+                        <p class="card-text">{{post.}}</p>
+                        
+                        <small class="text-muted">{{post.categoria}}</small>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-primary boton-cards">Leer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    </div>
+{% else %}
+    <div class="row justify-content-center">
+        <div class="col-4 text-center">
+            <div class="alert alert-warning" role="alert">
+                <p>Se el primero en subir contenido en esta categoria</p>
+            </div>
+        </div>
+    </div>
+
+{% endif %}
+</div>
+{% endblock contenido %}
