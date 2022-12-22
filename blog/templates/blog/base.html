@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Blog Grupo 6</title>
+     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+     <link rel="stylesheet" href="{% static 'css/eljuego.css' %}">
+     <link rel="stylesheet" href="{% static 'css/piedra.css' %}">
+     <link rel="stylesheet" href="{% static 'css/stonepaper.css' %}">
+        <meta name="viewport" content="width=device-width; initial-scale=1">
+    </head>
+    <body>
+      <header>
+        {% if user.is_authenticated %}
+        <a href="{% url 'nuevo_post' %}" class="top"><span class="glyphicon glyphicon-plus">Crear Post +</span></a>
+        {% endif %}
+        <h1><a href="/">Proyecto 'Blog de grupo 6'</a></h1>
+        <a href="{% url 'lista_de_post' %}">Inicio</a> |
+        <a href="https://maluaz01.github.io/ppt/">El juego</a>
+      </header>
+
+{% block content %}
+
+{% endblock %}
+
+<footer>
+
+<p class="futer">Curso Django de Codo a Codo, año 2022</p>
+
+    </footer>
+
+</body>
+
+</html>

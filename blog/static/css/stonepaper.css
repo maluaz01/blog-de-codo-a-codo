@@ -1,0 +1,34 @@
+body{
+     margin:0 auto;
+     background-color: #EDF8EB;
+}
+#tres{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+ #losdos{
+        display:flex;
+        flex-direction: row;
+        width: 98vw;
+        height: 48vh
+
+}
+article{
+        width: 49%;
+}
+#ganale{
+        font-size: 3rem;
+        text-align: center;
+}
+figure{
+       width: 49%;
+}
+img{
+    width: 100%;
+}
+#comenzar{
+          margin-top: 5vh;
+          width: 20vw;
+          margin-top: 30vh;
+}

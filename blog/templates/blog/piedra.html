@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/eljuego.css' %}">
+    <link rel="stylesheet" href="{% static 'css/piedra.css' %}">
+    <link rel="stylesheet" href="{% static 'css/stonepaper.css' %}">
+  </head>
+  <body>
+    <header>
+      <h1 id="juga">Jugá 'Piedra, papel o tijera'</h1>
+      <a href="{% url 'lista_de_post' %}">Inicio</a> |
+      <a href="{% url 'piedra' %}">El juego</a>
+    </header>
+    <section>
+
+      <iframe id="frameizq" name="frameizq" href="{% url stonepaper %}">
+      </iframe>
+
+    </section>
+
+    <footer>
+
+    </footer>
+  </body>
+</html>

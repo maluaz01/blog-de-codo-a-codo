@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/eljuego.css' %}">
+    <link rel="stylesheet" href="{% static 'css/piedra.css' %}">
+    <link rel="stylesheet" href="{% static 'css/stonepaper.css' %}">
+    <script type="text/javascript" src="{% static 'js/eljuego.js' %}">
+
+    </script>
+  </head>
+  <body>
+    <section id="comienzo">
+      <div id="ppt" style='display:inline'>
+        <input type="button" name="button" id="piedra" style='display:none' value='¡Piedra, ' onclick="misDibujos('piedra')" />
+        <input type="button" name="button" id="papel" style='display:none' value='papel ' onclick="misDibujos('papel')" />
+        <input type="button" name="button" id="tijera" style='display:none' value='o tijera!' onclick="misDibujos('tijera')" />
+      </div>
+      <input type="button" name="reseti" id="reseti" style='display:none' value='De nuevo...' onclick="denuevo()"/>
+      <input type="button" name="reiniciar" id="reiniciar" style='display:none' value='Reiniciar el juego' onclick="reiniciar()"/>
+
+    <div id="manos">
+      <figure>
+        <img id="propia" src="" style='display:none' alt="Mi elección">
+
+      </figure>
+      <figure>
+        <img id="t800" src="" style='display:none' alt="T-800">
+      </figure>
+      </div>
+      <div id="nombres">
+        <p id="tunombre"></p>
+        <p id="terminator">T-800</p>
+
+    </section>
+    <div id="contadores">
+    <p id="micontador">0</p>
+    <p id="t800contador">0</p>
+  </div>
+      <script type="text/javascript">
+
+
+        onload=comoTe();
+        onload=pipati();
+
+
+      </script>
+  </body>
+</html>
